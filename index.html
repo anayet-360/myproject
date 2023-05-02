@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Anayet</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body class="dark:bg-slate-900 dark:text-white">
+    <button id="darkbtn" class="border-none px-6 py-2 bg-black text-white dark:bg-blue-600  cursor-pointer">Dark Mood On</button>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat accusamus quasi perferendis nostrum aliquid illo. Magnam minus obcaecati magni perspiciatis quidem, nesciunt, earum sit incidunt saepe exercitationem hic, soluta inventore?</p>
+
+    
+
+    <script>
+        const darkMood = document.getElementById('darkbtn');
+        let mainElement = document.getElementById('main');
+        darkMood.addEventListener("click",()=> {
+           mainElement.classList.toggle("dark");
+        })
+    </script>
+</body>
+</html>
