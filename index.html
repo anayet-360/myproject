@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="" id="main">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +7,41 @@
     <title>Tech Anayet</title>
     <link rel="stylesheet" href="./dist/style.css">
 </head>
-<body class="dark:bg-slate-900 dark:text-white">
-    <button id="darkbtn" class="border-none px-6 py-2 bg-black text-white dark:bg-blue-600  cursor-pointer">Dark Mood On</button>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat accusamus quasi perferendis nostrum aliquid illo. Magnam minus obcaecati magni perspiciatis quidem, nesciunt, earum sit incidunt saepe exercitationem hic, soluta inventore?</p>
+<body>
 
-    
-
-    <script>
-        const darkMood = document.getElementById('darkbtn');
-        let mainElement = document.getElementById('main');
-        darkMood.addEventListener("click",()=> {
-           mainElement.classList.toggle("dark");
-        })
-    </script>
+    <form class="w-1/2 mx-auto" action="#">
+        <div class="form-group">
+            <label class="form-label">Name</label>
+            <input class="form-input" type="text">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Email</label>
+            <input class="form-input" type="email">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Password</label>
+            <input class="form-input" type="password">
+        </div> 
+          <div class="form-group">
+            <label class="form-label">Select Country</label>
+            <select class=" form-select form-multiselect" >
+                <option value="bangladesh">Bangladesh</option>
+                <option value="sran">Iran</option>
+                <option value="saudi-Arabia">Saudi Arabia</option>
+                <option value="seriya">Seriya</option>
+                <option value="qatar">Qatar</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Choose Your Favorite Item</label>
+            <input type="checkbox"
+            ><label> Cricket</label>
+            <input type="checkbox"
+            ><label> Football</label>
+            <input type="checkbox"
+            ><label> Tenis</label>
+          </div>
+    </form>
+     
 </body>
 </html>

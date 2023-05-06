@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .form-group {
+            @apply mb-3
+        }
+    
+        .form-label {
+            @apply text-sm text-gray-400 mb-1.5 block
+        }
+    
+        .form-input,.form-textarea,.form-select {
+            @apply w-full
+        }
+}

@@ -1,0 +1,8 @@
+node_modules/
+image/
+*.html
+*.css
+!index.html 
+!style.css
+*.json
+*.js
